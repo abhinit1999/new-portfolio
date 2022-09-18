@@ -1,0 +1,140 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+nav
+{
+    
+    background-color: rgb(21, 7, 89);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(240, 215, 215);
+    top: 0;
+    position:fixed;
+   
+    
+   
+}
+.logo
+{
+    font-size: 2rem;
+   
+}
+
+.logo::after
+{
+   content: 'Abhinit'; 
+   position:fixed;
+   top: 0.2rem;
+
+}
+
+.logo:hover
+{
+    color: white;
+ 
+    
+
+}
+.logo:hover::after
+{
+    content: "My Portfolio";
+}
+
+
+
+ul
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    
+}
+li
+{
+    
+    list-style: none;
+
+}
+
+.nav_Style
+{
+    text-decoration: none;
+    padding: 1.2rem;
+    color: white;
+    font-size: 1.1rem;
+    
+
+}
+.nav_Style:hover
+{
+    color: rgb(229, 202, 202);
+    text-shadow: red;
+}
+
+@media(max-width:903px)
+{
+    .logo{
+        display: none;
+    }
+}
+@media (max-width:535px)
+{
+    .logo
+    {
+        display: none;
+    }
+    
+    /* nav
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 5rem;
+        height: 100%;
+        left: 0;
+        position:fixed;
+        
+        background: transparent;
+    }
+    .nav_ul
+    {
+        background-color: transparent;
+        grid-template-columns: 0.1fr;
+        display:grid;
+        
+        width: 7rem;
+        height: 100%;
+        grid-template-rows: repeat(6,1fr);        
+        
+    }
+    .nav_Style
+    {
+        color: rgb(48, 54, 107);
+    } */
+    
+    .nav_Style
+    {
+        font-size: .8rem;
+    }
+
+}
+
+@media(max-width:400px)
+{
+    .nav_Style
+    {
+        font-size: .7rem;
+    }
+}
+@media(max-width:300px)
+{
+    .nav_Style
+    {
+        font-size: .5rem;
+    }
+   
+}
